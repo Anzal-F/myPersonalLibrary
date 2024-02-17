@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Library</title>
+    <link rel="stylesheet" href="home.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body class="body_m">
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="libraryLogo.jpg" alt="Library Logo">
+                <h1>My Personal Library</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="books">
+            <h2 class="h2_books">My Recently Read Books</h2>
+            <button id="add-book" class="add_book">Add Book</button>
+            <div class="book-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Personal Library. All rights reserved. Brought to you by Anzal</p>
+    </footer>
+
+    <input type="file" id="file-input" accept="image/*" style="display: none;"> <!-- Hidden file input for uploading books -->
+    <script src="script.js"></script> <!-- Link to external JavaScript file for dynamic functionality -->
+</body>
+</html>

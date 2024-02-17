@@ -1,0 +1,125 @@
+/* CSS for the navbar */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CSS for the book section */
+#books {
+    padding: 20px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.book {
+    width: calc(20% - 20px); /* Adjust width to fit five items in a row with gap */
+    background-color: #93af93; /* Subtle background color for book columns */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book h3 {
+    margin-top: 10px;
+}
+.h2_books {
+    margin-top: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.stars::before {
+    content: "★★★★★";
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #f0f0f0 var(--rating), transparent var(--rating));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.num-reviews {
+    margin-left: 5px;
+    color: #666;
+}
+
+.save-btn,
+.delete-btn {
+    margin-top: 10px;
+    background: radial-gradient(circle, #3e2723, #000000); /* Spiral gradient color of deep brown for buttons */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn:hover,
+.delete-btn:hover {
+    background: radial-gradient(circle, #5d4037, #1b0000); /* Darker brown color for buttons on hover */
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    height: 20px;
+}
+
+.body_m{
+    background-image: radial-gradient(circle, rgb(150, 252, 189), #0e6d39);
+}
+
+.add_book{
+    background-color: #f09f9f;
+    border-width: 5px;
+    border-color: #f09f9f;
+    color: #000000;
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
